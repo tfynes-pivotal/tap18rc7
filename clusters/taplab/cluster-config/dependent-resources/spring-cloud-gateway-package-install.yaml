@@ -1,0 +1,23 @@
+apiVersion: packaging.carvel.dev/v1alpha1
+kind: PackageInstall
+metadata:
+  annotations:
+    packaging.carvel.dev/package-ClusterRole: spring-cloud-gateway-tap-install-cluster-role
+    packaging.carvel.dev/package-ClusterRoleBinding: spring-cloud-gateway-tap-install-cluster-rolebinding
+    packaging.carvel.dev/package-ServiceAccount: spring-cloud-gateway-tap-install-sa
+    tkg.tanzu.vmware.com/tanzu-package-ClusterRole: spring-cloud-gateway-tap-install-cluster-role
+    tkg.tanzu.vmware.com/tanzu-package-ClusterRoleBinding: spring-cloud-gateway-tap-install-cluster-rolebinding
+    tkg.tanzu.vmware.com/tanzu-package-ServiceAccount: spring-cloud-gateway-tap-install-sa
+  finalizers:
+  - finalizers.packageinstall.packaging.carvel.dev/delete
+  generation: 1
+  name: spring-cloud-gateway
+  namespace: tap-install
+spec:
+  packageRef:
+    refName: spring-cloud-gateway.tanzu.vmware.com
+    versionSelection:
+      constraints: ">0.0.1"
+      #! constraints: 2.1.5
+      prereleases: {}
+  serviceAccountName: spring-cloud-gateway-tap-install-sa

@@ -1,0 +1,15 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    packaging.carvel.dev/package: spring-cloud-gateway-tap-install
+    tkg.tanzu.vmware.com/tanzu-package: spring-cloud-gateway-tap-install
+  name: spring-cloud-gateway-tap-install-cluster-role
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - '*'
+  verbs:
+  - '*'

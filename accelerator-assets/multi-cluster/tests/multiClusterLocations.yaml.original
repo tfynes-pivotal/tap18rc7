@@ -1,0 +1,19 @@
+--- 
+kubernetes:
+  serviceLocatorMethod:
+    type: multiTenant
+  clusterLocatorMethods:
+    - type: config
+      clusters:
+        - url: FULL_CLUSTER_URL
+          name: FULL
+          authProvider: serviceAccount
+          serviceAccountToken: FULL_CLUSTER_TOKEN
+          skipTLSVerify: true
+          skipMetricsLookup: true
+        - url: RUN_CLUSTER_URL
+          name: RUN
+          authProvider: serviceAccount
+          serviceAccountToken: RUN_CLUSTER_TOKEN
+          skipTLSVerify: true
+          skipMetricsLookup: true

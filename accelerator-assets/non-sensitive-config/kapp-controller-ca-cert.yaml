@@ -1,0 +1,13 @@
+#@ load("@ytt:data", "data")
+#@ load("@ytt:base64", "base64")
+#@ load("@ytt:json", "json")
+---
+apiVersion: v1
+kind: Secret
+metadata:
+    name: kapp-controller-config
+    namespace: kapp-controller
+stringData:
+    #@ if data.values.customCaCertsProvided:
+    caCerts: #@ data.values.caCerts 
+    #@ end

@@ -1,0 +1,22 @@
+#@ load("@ytt:data", "data")
+
+---
+apiVersion: packaging.carvel.dev/v1alpha1
+kind: PackageInstall
+metadata:
+  name: ootb-supply-chain-basic
+  namespace: tap-install
+  annotations:
+    kapp.k14s.io/change-rule.2: "upsert after upserting tap"
+    #! OVERLAY-PLACEHOLDER
+spec:
+  packageRef:
+    refName: ootb-supply-chain-basic.tanzu.vmware.com
+    versionSelection:
+      constraints: ">0.0.1"
+      #! constraints: 0.14.7
+      prereleases: {}
+  serviceAccountName: tap-install-sa
+  values:
+  - secretRef:
+      name: ootb-supply-chain-testing-scanning-values-ver-1

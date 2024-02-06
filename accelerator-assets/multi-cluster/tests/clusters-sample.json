@@ -1,0 +1,18 @@
+{"CLUSTERS":[
+    {
+    "url":"https://akslab3-rg1-3bcc02-04vensyq.hcp.eastus.azmk8s.io:443",
+    "name":"FULL",
+    "authProvider":"serviceAccount",
+    "serviceAccountToken":"eyJhbGciOiJxR08w...",
+    "skipTLSVerify":"true",
+    "skipMetricsLookup":"true"
+    },
+    {
+    "url":"https://akslab4-rg1-3bcc02-qeil4cwd.hcp.eastus.azmk8s.io:443",
+    "name":"RUN",
+    "authProvider":"serviceAccount",
+    "serviceAccountToken":"eyJhbGciOiJs...",
+    "skipTLSVerify":"true",
+    "skipMetricsLookup":"true"
+    }
+    ]}

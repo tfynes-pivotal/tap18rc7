@@ -1,0 +1,18 @@
+#@ load("@ytt:data", "data")
+#@ load("@ytt:json", "json")
+#@ load("@ytt:overlay", "overlay")
+#@ clusterList = json.decode(data.values.clusters)
+#@overlay/match by=overlay.all
+--- 
+tap_install:
+  sensitive_values:
+    tap_gui:
+      app_config:
+#@overlay/match missing_ok=True
+        kubernetes:
+          serviceLocatorMethod:
+            type: multiTenant
+#@overlay/match missing_ok=True
+          clusterLocatorMethods:
+          - type: config
+            clusters: #@ clusterList["CLUSTERS"]
