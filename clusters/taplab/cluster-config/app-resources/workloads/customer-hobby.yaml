@@ -22,7 +22,7 @@ spec:
         location: 
           path: "/api-docs"
         owner: customer-relations-department
-        system: profile-management
+        system: hobby-management
         description: Manage customer hobbies
   source:
     git:
