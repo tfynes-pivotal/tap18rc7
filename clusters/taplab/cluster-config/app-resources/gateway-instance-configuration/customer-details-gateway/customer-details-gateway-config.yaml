@@ -21,7 +21,7 @@ spec:
     description: Tanzu Curated API Demo
     version: 0.0.1
     groupId: customer-details-management
-    serverUrl: https://customer-details.a3.fynesy.com
+    serverUrl: 'https://customer-details.a3.fynesy.com/'
     cors:
       allowedOrigins:
       - https://api-portal.a3.fynesy.com
