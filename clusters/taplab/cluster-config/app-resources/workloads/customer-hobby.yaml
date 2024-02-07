@@ -7,6 +7,7 @@ metadata:
     app.kubernetes.io/part-of: customer-hobby
     apis.apps.tanzu.vmware.com/register-api: "true"
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    networking.knative.dev/visibility: cluster-local
 spec:
   build:
     env:
