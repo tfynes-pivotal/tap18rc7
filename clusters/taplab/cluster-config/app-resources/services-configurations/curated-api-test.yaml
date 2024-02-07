@@ -11,7 +11,7 @@ spec:
   description:          test of the curated api support in tap
   documentation:      
     url:                https://docs.example.com
-  groupId:              profile-management
+  groupId:              customer-details-management
   version:              0.0.1
   apiDescriptors:
     - name:             customer-profile

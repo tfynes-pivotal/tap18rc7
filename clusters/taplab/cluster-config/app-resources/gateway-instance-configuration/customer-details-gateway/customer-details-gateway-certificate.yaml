@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: customer-details-gateway-cert
+  namespace: default
+spec:
+  dnsNames:
+  - customer-details.a3.fynesy.com
+  secretName: taptlscert
+  issuerRef:
+    name: letsencrypt-production
+    kind: ClusterIssuer

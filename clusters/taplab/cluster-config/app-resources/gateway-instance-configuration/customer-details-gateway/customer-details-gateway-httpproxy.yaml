@@ -1,0 +1,16 @@
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: customer-details-gateway
+  namespace: default
+spec:
+  routes:
+  - conditions:
+    - prefix: /
+    services:
+    - name: customer-details-gateway
+      port: 80
+  virtualhost:
+    fqdn: customer-details.a3.fynesy.com
+    tls:
+      secretName: taptlscert
