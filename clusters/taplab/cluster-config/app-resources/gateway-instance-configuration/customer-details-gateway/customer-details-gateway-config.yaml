@@ -24,3 +24,11 @@ spec:
     cors:
       allowedOrigins:
       - https://api-portal.a3.fynesy.com
+      - https://tap-gui.a3.fynesy.com
+      allowedMethods:
+      - "GET"
+      - "PUT"
+      - "POST"
+      allowedHeaders:
+      - '*'
+
