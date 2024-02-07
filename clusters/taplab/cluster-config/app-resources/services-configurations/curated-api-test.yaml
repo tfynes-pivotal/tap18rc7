@@ -16,14 +16,14 @@ spec:
   apiDescriptors:
     - name:             customer-profile
       namespace:        default
-      pathPrefix:       customer-profile
+      pathPrefix:       '/customer-profile'
       routeConfig:
         ssoEnabled:     false
         tokenRelay:     false
         filters:        []
     - name:             customer-hobby
       namespace:        default
-      pathPrefix:       customer-hobby
+      pathPrefix:       '/customer-hobby'
       routeConfig:
         ssoEnabled:     false
         tokenRelay:     false
