@@ -1,0 +1,30 @@
+apiVersion: apis.apps.tanzu.vmware.com/v1alpha1
+kind: CuratedAPIDescriptor
+metadata:
+  name:                 customer-details
+  namespace:            default
+  annotations:
+    "apis.apps.tanzu.vmware.com/route-provider": "spring-cloud-gateway"   # specify route provider
+spec:
+  type: openapi         # type of the API spec. oneOf(openapi, grpc, asyncapi, graphql)
+  title:                customer-details 
+  description:          test of the curated api support in tap
+  documentation:      
+    url:                https://docs.example.com
+  groupId:              profile-management
+  version:              0.0.1
+  apiDescriptors:
+    - name:             customer-profile
+      namespace:        default
+      pathPrefix:       customer-profile
+      routeConfig:
+        ssoEnabled:     false
+        tokenRelay:     false
+        filters:        []
+    - name:             customer-hobby
+      namespace:        default
+      pathPrefix:       customer-hobby
+      routeConfig:
+        ssoEnabled:     false
+        tokenRelay:     false
+        filters:        []
