@@ -32,4 +32,16 @@ spec:
       - "POST"
       allowedHeaders:
       - '*'
+  serviceAccount:
+    name: tdemo-gateway-svc-acc
+  extensions:
+    secretsProviders:
+    - name: vault-api-keys
+      vault:
+        roleName: api-portal-role
+        path: api-portal-for-vmware-tanzu
+    filters:
+      apiKey:
+        enabled: true
+        secretsProviderName: vault-api-keys
 
