@@ -6,3 +6,6 @@ vault-setup/vault.out
 .DS_Store
 accelerator-assets/.DS_Store
 .DS_Store
+vault-setup/.dustin1.cache
+vault-setup/dustin1.droplet
+vault-setup/local.yml
