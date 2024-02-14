@@ -2,7 +2,7 @@
 
 TAP installation configurator using Tanzu Accelerator to provide a tailored GitOps installation repo for the platform. 
 
-Current version TAP/tbs-deps 1.8.0-rc12 / RMQ 1.5.1 / TDS 1.12.0
+Current version TAP/tbs-deps 1.8.0-rc.13 / RMQ 1.5.1 / TDS 1.12.0
 
 NOTE: "tanzu-sync/scripts/deploy.sh" script errors out but installation will continue and fully reconcile.
 
@@ -98,4 +98,4 @@ Optionally run k9s to watch TAP install and configuraiton on your target cluster
 - still working on test&scan in more than one namespace (currently default only)
 - Removed TDS and RMQ explicit repo deployments - bitnami operator included
 - updated Spring Petclinic to use a class-claim to dynamically provision and bind to bitnami postgres (much simpler!)
-- Need to revisit for WFD wtih 1.8.0-rc12 as it's still using crossplane which uses full RMQ
+- Need to revisit for WFD wtih 1.8.0-rc.13 as it's still using crossplane which uses full RMQ
