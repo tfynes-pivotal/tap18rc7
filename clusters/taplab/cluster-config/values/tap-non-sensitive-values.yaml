@@ -142,12 +142,12 @@ tap_install:
     # - name: contour
     #   secrets:
     #   - name: reqfix-overlay-secret
-    - name: crossplane
-      secrets:
-      - name: reqfix-overlay-secret
-    - name: developer-conventions
-      secrets:
-      - name: reqfix-overlay-secret
+    # - name: crossplane
+    #   secrets:
+    #   - name: reqfix-overlay-secret
+    # - name: developer-conventions
+    #   secrets:
+    #   - name: reqfix-overlay-secret
     - name: fluxcd-source-controller
       secrets:
       - name: reqfix-overlay-secret
