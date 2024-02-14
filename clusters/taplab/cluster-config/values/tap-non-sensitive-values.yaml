@@ -142,24 +142,24 @@ tap_install:
     # - name: contour
     #   secrets:
     #   - name: reqfix-overlay-secret
-    # - name: crossplane
-    #   secrets:
-    #   - name: reqfix-overlay-secret
-    # - name: developer-conventions
-    #   secrets:
-    #   - name: reqfix-overlay-secret
-    # - name: fluxcd-source-controller
-    #   secrets:
-    #   - name: reqfix-overlay-secret
-    # - name: grype
-    #   secrets:
-    #   - name: reqfix-overlay-secret
-    # - name: metadata-store
-    #   secrets:
-    #   - name: reqfix-overlay-secret
-    # - name: namespace-provisioner
-    #   secrets:
-    #   - name: reqfix-overlay-secret
+    - name: crossplane
+      secrets:
+      - name: reqfix-overlay-secret
+    - name: developer-conventions
+      secrets:
+      - name: reqfix-overlay-secret
+    - name: fluxcd-source-controller
+      secrets:
+      - name: reqfix-overlay-secret
+    - name: grype
+      secrets:
+      - name: reqfix-overlay-secret
+    - name: metadata-store
+      secrets:
+      - name: reqfix-overlay-secret
+    - name: namespace-provisioner
+      secrets:
+      - name: reqfix-overlay-secret
     - name: ootb-templates
       secrets:
       - name: reqfix-overlay-secret
