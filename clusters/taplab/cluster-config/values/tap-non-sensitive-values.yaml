@@ -107,8 +107,8 @@ tap_install:
       secrets:
       - name: reqfix-overlay-secret
     - name: api-auto-registration
-       secrets:
-       - name: reqfix-overlay-secret
+      secrets:
+      - name: reqfix-overlay-secret
     - name: appliveview
       secrets:
       - name: reqfix-overlay-secret
