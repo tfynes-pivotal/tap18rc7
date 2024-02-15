@@ -1,10 +1,10 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: af18
+  name: angular-frontend
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: af18
+    app.kubernetes.io/part-of: angular-frontend
     #apps.tanzu.vmware.com/has-tests: "true"
 spec:
   params:
