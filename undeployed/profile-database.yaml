@@ -5,7 +5,7 @@ metadata:
     classclaims.services.apps.tanzu.vmware.com/xrd-name: xpostgresqlinstances.bitnami.database.tanzu.vmware.com
   finalizers:
   - classclaims.services.apps.tanzu.vmware.com/provision-finalizer
-  name: cd
+  name: profile-database
   namespace: default
 spec:
   classRef:

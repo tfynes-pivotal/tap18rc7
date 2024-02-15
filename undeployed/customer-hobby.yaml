@@ -31,7 +31,7 @@ spec:
       ref:
         branch: main
   serviceClaims:
-    - name: database
+    - name: hobby-database
       ref:
         apiVersion: services.apps.tanzu.vmware.com/v1alpha1
         kind: ClassClaim
